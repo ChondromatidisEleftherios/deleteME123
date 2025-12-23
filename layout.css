@@ -6,6 +6,7 @@
   flex-wrap: nowrap;
   position: relative;
   min-height: 100vh;
+  height: 100%;
 }
 
 .appLogoContainer {
@@ -78,7 +79,7 @@
   .pageBase {
     flex-direction: column;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 100vh;
   }
 
   .appLogoContainer {
@@ -116,7 +117,7 @@
   .pageBase {
     flex-direction: column;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 100vh;
   }
 
   .appLogoContainer {
