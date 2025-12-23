@@ -1,0 +1,149 @@
+.pageBase {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  min-height: 100vh;
+}
+
+.appLogoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  width: 98%;
+  min-width: 850px;
+  height: clamp(120px, 6.5vw, 150px);
+  margin-bottom: clamp(50px, 2.8vw, 90px);
+}
+
+.formCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(25px, 2.2vw, 35px);
+}
+
+.formHeaderSection {
+  margin-top: clamp(25px, 2vw, 40px);
+  margin-bottom: clamp(25px, 2vw, 40px);
+  text-align: center;
+  line-height: 1;
+}
+
+.formLayout {
+  margin-top: clamp(26px, 2.2vw, 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+}
+
+.inputLayout {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(22px, 1.4vw, 50px);
+}
+
+.inputLayoutButton {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(28px, 3vw, 62px);
+}
+
+.footerContainer {
+  margin-top: auto;
+  width: 100%;
+}
+
+.footerLayout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submitButtonText:hover {
+  font-size: 20px;
+}
+
+/*TABLET*/
+
+@media (max-width: 1190px) {
+  .pageBase {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+  }
+
+  .appLogoContainer {
+    justify-content: center;
+    padding-left: 0px;
+    min-width: 50px;
+    height: clamp(80px, 14vw, 110px);
+    margin-bottom: clamp(80px, 10vw, 100px);
+    margin-top: clamp(80px, 10vw, 100px);
+  }
+
+  .formCardContainer {
+    margin-bottom: clamp(25px, 2.2vw, 35px);
+  }
+
+  .formHeaderSection {
+    margin-top: clamp(40px, 5vw, 45px);
+    line-height: 1;
+    margin-bottom: clamp(40px, 5vw, 45px);
+  }
+
+  .formLayout {
+    margin-top: clamp(26px, 2.2vw, 48px);
+    height: 65%;
+  }
+
+  .inputLayout {
+    margin-bottom: clamp(28px, 7.5vw, 42px);
+  }
+}
+
+/*MOBILE*/
+
+@media (max-width: 520px) {
+  .pageBase {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+  }
+
+  .appLogoContainer {
+    justify-content: center;
+    padding-left: 0px;
+    min-width: 50px;
+    height: clamp(80px, 14vw, 110px);
+    margin-bottom: clamp(32px, 8vw, 42px);
+    margin-top: clamp(32px, 8vw, 42px);
+  }
+
+  .formCardContainer {
+    margin-bottom: clamp(25px, 2.2vw, 35px);
+  }
+
+  .formHeaderSection {
+    margin-top: clamp(25px, 10vw, 38px);
+    line-height: 0.7;
+    margin-bottom: clamp(25px, 10vw, 38px);
+  }
+
+  .formLayout {
+    margin-top: clamp(26px, 2.2vw, 48px);
+    height: 65%;
+  }
+
+  .inputLayout {
+    margin-bottom: clamp(30px, 8vw, 40px);
+  }
+}

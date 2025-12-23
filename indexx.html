@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="base.css" rel="stylesheet" />
+		<link href="layout.css" rel="stylesheet" />
+		<link href="components.css" rel="stylesheet" />
+		<title>AHEPPA APP - REGISTER</title>
+	</head>
+	<body class="pageBase">
+		<header class="appLogoContainer">
+			<div class="appLogo">
+				<a href="#">
+					<img
+						src="./appIcons/logo.png"
+						alt="App Logo!"
+						class="logoImage"
+					/>
+				</a>
+			</div>
+		</header>
+		<main class="formCardContainer">
+			<div class="formCard">
+				<section class="formHeaderSection">
+					<h1 class="header">Create an Account,</h1>
+					<span class="quick">it's</span>
+					<span class="easy"> and</span>
+					<span class="end">!</span>
+				</section>
+				<section class="formLayout">
+					<form action="/postRegister" method="post">
+						<div class="inputLayout">
+							<label for="username" class="formLabels">
+								Username*
+							</label>
+							<input
+								type="text"
+								name="username"
+								value=""
+								minlength="4"
+								maxlength="35"
+								class="formInput"
+								placeholder="JohnDoe"
+							/>
+						</div>
+						<div class="inputLayout">
+							<label for="userEmail" class="formLabels">
+								Email Address*
+							</label>
+							<input
+								type="email"
+								name="userEmail"
+								value=""
+								class="formInput"
+								placeholder="johnDoe@gmail.com"
+								minlength="8"
+								maxlength="55"
+							/>
+						</div>
+						<div class="inputLayout">
+							<label for="userPass" class="formLabels">
+								Password*
+							</label>
+							<input
+								type="password"
+								name="userPass"
+								value=""
+								minlength="8"
+								maxlength="23"
+								class="formInput"
+								placeholder="Enter a Strong Password..."
+							/>
+						</div>
+						<div class="inputLayoutButton">
+							<button
+								type="submit"
+								name="createAcc"
+								value="clicked"
+								class="submitButton"
+							>
+								Create Account
+							</button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class="footerContainer">
+			<div class="footerLayout">
+				<p class="footerText">
+					© AHEPA APP 2026. All Rights Reserved.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

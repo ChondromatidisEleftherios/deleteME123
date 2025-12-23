@@ -1,0 +1,60 @@
+@font-face {
+	font-family: Play-Regular;
+	src: url("./fonts/mainText/Play-Regular.ttf");
+}
+
+html {
+	--general-background-color: #f3f4f6;
+	--default-font: Play-Regular;
+	--default-font-size: 1.5rem;
+	--default-text-color: #323843;
+	--default-link-color: #636ae7;
+	--hovered-link-color: #7d84ff;
+	--input-font-size: 8rem;
+	--input-padding: 4px;
+	--button-font-size: 8rem;
+}
+
+.pageBase {
+	background-color: var(--general-background-color);
+	font-family: var(--default-font), sans-serif;
+	font-size: var(--default-font-size);
+	color: var(--default-text-color);
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+	height: 100vh;
+}
+
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color: var(--default-link-color);
+	transition: 0.25s ease-out color;
+}
+
+a:hover {
+	color: var(--hovered-link-color);
+}
+
+button {
+	font-family: inherit;
+	font-size: var(--button-font-size);
+	cursor: pointer;
+	border: 0;
+}
+
+input {
+	padding: var(--input-padding);
+	border-style: solid;
+	box-shadow: none;
+	color: var(--default-text-color);
+	outline: none;
+	font-family: inherit;
+}
+
+label {
+	user-select: none;
+	margin: 0;
+	padding: 0;
+}

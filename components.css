@@ -1,0 +1,208 @@
+html {
+	--default-button-color: #636ae7;
+	--hover-button-color: #7980fc;
+	--border-radius-button: 10px;
+	--border-radius-form-card: 20px;
+	--inner-button-text-color: white;
+	--border-input-size: 3px;
+	--border-radius-input: 15px;
+	--height-input: 28px;
+	--height-input-mobile: 35px;
+	--border-input-color: #636ae7;
+	--border-input-false-color: #fc792d;
+	--placeholder-input-color: #a7adb7;
+	--focus-input-color: #7980fc;
+	--form-card-color: white;
+	--border-form-card-color: #f3f4f6;
+	--border-radius-form-card: 18px;
+	--footer-font-size: clamp(0.6rem, 0.8vw, 0.875rem);
+	--footer-font-size-mobile: clamp(0.7rem, 2.5vw, 0.8rem);
+	--form-header-font-size: clamp(1.7rem, 2.3vw, 3rem);
+	--form-header-font-size-tablet: clamp(2.3rem, 6vw, 2.6rem);
+	--form-header-font-size-mobile: clamp(1.6rem, 6vw, 2rem);
+	--form-label-font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+	--form-label-font-size-mobile: clamp(1.2rem, 4vw, 1.3rem);
+	--form-placeholder-font-size: clamp(0.9rem, 1.1vw, 1.3rem);
+	--form-placeholder-font-size-mobile: clamp(1rem, 1.15vw, 1.4rem);
+	--button-font-size: clamp(1rem, 1.2vw, 1.4rem);
+	--button-font-size-mobile: clamp(1.15rem, 5.5vw, 1.35rem);
+}
+
+.submitButton {
+	background-color: var(--default-button-color);
+	color: var(--inner-button-text-color);
+	border-radius: var(--border-radius-button);
+	transition:
+		background-color 0.2s ease-out,
+		transform 0.2s ease-out;
+	height: clamp(40px, 3vw, 60px);
+	font-weight: 600;
+	font-size: var(--button-font-size);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.submitButton:hover {
+	background-color: var(--hover-button-color);
+	transform: scale(1.03);
+}
+
+.formInput {
+	border-radius: var(--border-radius-input);
+	border-width: var(--border-input-size);
+	border-color: var(--border-input-color);
+	transition:
+		transform 0.2s ease-out,
+		border-color 0.25s ease-out;
+	width: clamp(340px, 22vw, 520px);
+	height: var(--height-input);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	font-size: var(--form-placeholder-font-size);
+}
+
+.formInput:focus {
+	transform: scale(1.025);
+	border-color: var(--focus-input-color);
+}
+
+.formInput:invalid {
+	border-color: var(--border-input-false-color);
+}
+
+.formCard {
+	background-color: var(--form-card-color);
+	border-radius: var(--border-radius-form-card);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	width: clamp(430px, 30vw, 620px);
+	height: clamp(490px, 35vw, 680px);
+}
+
+.footerLayout {
+	background-color: var(--form-card-color);
+}
+
+.footerText {
+	font-size: var(--footer-font-size);
+	font-weight: 600;
+}
+
+.logoImage {
+	object-fit: cover;
+}
+
+.quick,
+.easy,
+.end,
+.header {
+	font-size: var(--form-header-font-size);
+	font-weight: 600;
+	user-select: none;
+}
+
+.quick::after {
+	content: " Quick ";
+	color: var(--default-button-color);
+	font-weight: 600;
+}
+
+.easy::after {
+	content: " Easy ";
+	color: var(--default-button-color);
+	font-weight: 600;
+}
+
+.header {
+	user-select: none;
+}
+
+.formLabels {
+	font-size: var(--form-label-font-size);
+}
+
+::placeholder {
+	color: var(--placeholder-input-color);
+	font-size: var(--form-placeholder-font-size);
+}
+
+@media (max-width: 1190px) {
+	.formCard {
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+		width: clamp(420px, 65vw, 650px);
+		height: clamp(600px, 82vw, 680px);
+	}
+
+	.formInput {
+		width: clamp(380px, 52vw, 550px);
+		height: var(--height-input-mobile);
+		box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.4);
+		font-size: var(--form-placeholder-font-size-mobile);
+	}
+
+	.formLabels {
+		font-size: var(--form-label-font-size-mobile);
+	}
+
+	.quick,
+	.easy,
+	.end,
+	.header {
+		font-size: var(--form-header-font-size-tablet);
+	}
+
+	.submitButton {
+		height: clamp(45px, 3.4vw, 66px);
+		font-weight: 600;
+		font-size: var(--button-font-size-mobile);
+		box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+	}
+
+	.footerText {
+		font-size: var(--footer-font-size-mobile);
+	}
+
+	::placeholder {
+		color: var(--placeholder-input-color);
+		font-size: var(--form-placeholder-font-size-mobile);
+	}
+}
+
+@media (max-width: 520px) {
+	.formCard {
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+		width: clamp(270px, 78vw, 340px);
+		height: clamp(500px, 115vw, 550px);
+	}
+
+	.formInput {
+		width: clamp(230px, 64vw, 290px);
+		height: var(--height-input-mobile);
+		box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+		font-size: var(--form-placeholder-font-size-mobile);
+	}
+
+	.formLabels {
+		font-size: var(--form-label-font-size-mobile);
+	}
+
+	.quick,
+	.easy,
+	.end,
+	.header {
+		font-size: var(--form-header-font-size-mobile);
+	}
+
+	.submitButton {
+		height: clamp(45px, 3.4vw, 66px);
+		font-weight: 600;
+		font-size: var(--button-font-size-mobile);
+		box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+	}
+
+	.footerText {
+		font-size: var(--footer-font-size-mobile);
+	}
+
+	::placeholder {
+		color: var(--placeholder-input-color);
+		font-size: var(--form-placeholder-font-size-mobile);
+	}
+}
